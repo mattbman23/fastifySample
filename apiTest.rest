@@ -1,0 +1,17 @@
+@baseUrl = http://localhost:{{$dotenv PORT}}
+
+### Get all post
+GET {{baseUrl}}/api/posts
+
+### Get post by Id
+GET {{baseUrl}}/api/posts/1
+
+### Create post
+
+POST {{baseUrl}}/api/posts
+Content-Type: application/json
+
+{
+    "user": "joe",
+    "comment": 123
+}
